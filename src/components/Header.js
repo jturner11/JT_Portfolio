@@ -9,14 +9,13 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Josh Turner</h1>
-                <p>I'm josh, welcome to my portfolio</p>
+                <p>Software engineering since 2017</p>
             </div>
         </div>
         <nav>
             <ul>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
         </nav>

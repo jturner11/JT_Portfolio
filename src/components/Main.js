@@ -1,11 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
-import macbook from '../images/macbook.jpg'
-import techiphone from '../images/techiphone.png';
+import UpdatedIcons from '../images/UpdatedIcons.png';
 
 
 class Main extends React.Component {
@@ -19,37 +15,31 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
           {/* <span className="image main"><img src={pic01} alt="" /></span> */}
-          <p>An intro to who i am and what i do.</p>
+          <p>Josh Turner is a full stack software engineer / UX & UI designer living in the UK.</p>
+          <p>I started my journey in software back in 2017, fast forward 18 months and i'm currently working for <a href="https://consentric.io/">Consentric</a>, a cloud based data management software that complies with the new GDPR regulations</p>
           <p>Check out my <a href="https://github.com/jturner11/"> work</a>.</p>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
-          {/* <span className="image main"><img src={macbook} alt="" /></span> */}
-          <p>I'm currently working as a fullstack javascript developer</p>
+          <p>My working days currently consist of engineering <a href="https://consentric.io/"> Consentric.io</a></p>
+          <p>A new cloud-based GDPR software, which provides a comprehensive and compliant record of processing activity for personal data.</p>
           <h3>Technologies i've been using</h3>
-          <span><img src={techiphone} /></span>
-          {close}
-        </article>
-
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">About</h2>
-          {/* <span className="image main"><img src={pic03} alt="" /></span> */}
-          <p>ABOUT MEEEEEE</p>
+          <span><img src={UpdatedIcons} /></span>
           {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="https://formspree.io/joshsturner11@gmail.com" >
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="text" name="_replyto" id="email" />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
@@ -61,7 +51,7 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            {/* <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li> */}
+            <li><a href="https://twitter.com/Josh____Turner" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
             <li><a href="https://instagram.com/joshturner_jt" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
             <li><a href="https://github.com/jturner11/" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
