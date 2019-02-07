@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import techiphone from '../images/techiphone.png';
+import roundedview from '../images/roundedview.png';
 
 
 class Main extends React.Component {
@@ -26,7 +27,7 @@ class Main extends React.Component {
           <p>My working days currently consist of engineering <a href="https://consentric.io/"> Consentric.io</a></p>
           <p>A new cloud-based GDPR software, which provides a comprehensive and compliant record of processing activity for personal data.</p>
           <h3>Technologies i've been using</h3>
-          <span><img src={techiphone} /></span>
+          <span><img src={roundedview} /></span>
           {close}
         </article>
 
