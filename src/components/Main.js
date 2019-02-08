@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import techiphone from '../images/techiphone.png';
-import roundedview from '../images/roundedview.png';
+import roundedview from '../images/roundedview1.png';
 
 
 class Main extends React.Component {
